@@ -1,0 +1,8 @@
+[package]
+name = "libsql_ext"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libsql = { path = "vendor/libsql/libsql", features=["core", "serde"] }
+tokio = { version = "^1.38.0", features=["macros", "rt-multi-thread"] }
